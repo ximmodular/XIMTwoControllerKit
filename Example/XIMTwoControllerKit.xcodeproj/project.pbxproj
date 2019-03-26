@@ -39,9 +39,9 @@
 /* Begin PBXFileReference section */
 		0BDF87EDFBCAC9E92B0D7104 /* Pods_XIMTwoControllerKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XIMTwoControllerKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329697C7C04B5310023BF1E6 /* Pods-XIMTwoControllerKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMTwoControllerKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XIMTwoControllerKit_Tests/Pods-XIMTwoControllerKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4FFBCABE37D94A62478E11BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4FFBCABE37D94A62478E11BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		526B768F3CCA60582B277839 /* Pods-XIMTwoControllerKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMTwoControllerKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-XIMTwoControllerKit_Example/Pods-XIMTwoControllerKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5BD7CD000A7D6080B25459EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5BD7CD000A7D6080B25459EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XIMTwoControllerKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XIMTwoControllerKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9163BBC79B9AA1BB2B3201A2 /* Pods-XIMTwoControllerKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMTwoControllerKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-XIMTwoControllerKit_Tests/Pods-XIMTwoControllerKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BB3D90C502E548DE53B2921D /* XIMTwoControllerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XIMTwoControllerKit.podspec; path = ../XIMTwoControllerKit.podspec; sourceTree = "<group>"; };
+		BB3D90C502E548DE53B2921D /* XIMTwoControllerKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XIMTwoControllerKit.podspec; path = ../XIMTwoControllerKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDF35E796FE09F5D7034B631 /* Pods-XIMTwoControllerKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XIMTwoControllerKit_Example.release.xcconfig"; path = "Target Support Files/Pods-XIMTwoControllerKit_Example/Pods-XIMTwoControllerKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D7540C3446CE00BA10FA97BF /* Pods_XIMTwoControllerKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XIMTwoControllerKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				329697C7C04B5310023BF1E6 /* Pods-XIMTwoControllerKit_Tests.debug.xcconfig */,
 				9163BBC79B9AA1BB2B3201A2 /* Pods-XIMTwoControllerKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -324,10 +323,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XIMTwoControllerKit_Example/Pods-XIMTwoControllerKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/XIMTwoControllerCategoryKit/XIMTwoControllerCategoryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XIMTwoControllerKit/XIMTwoControllerKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XIMTwoControllerCategoryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XIMTwoControllerKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

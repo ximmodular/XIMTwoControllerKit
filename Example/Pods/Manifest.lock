@@ -1,0 +1,28 @@
+PODS:
+  - CTMediator (25)
+  - XIMTwoControllerCategoryKit (0.1.0):
+    - CTMediator
+  - XIMTwoControllerKit (0.1.0):
+    - XIMTwoControllerCategoryKit
+
+DEPENDENCIES:
+  - XIMTwoControllerKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+  https://github.com/xim9160/XIMSpecs.git:
+    - XIMTwoControllerCategoryKit
+
+EXTERNAL SOURCES:
+  XIMTwoControllerKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  XIMTwoControllerCategoryKit: d5e39f3ee6bbaf8088614b6860a943780cba9195
+  XIMTwoControllerKit: f78cbf66dff0ebc77239c33bc7f2a82a4559bafa
+
+PODFILE CHECKSUM: 60c6ac4f4a6584f6c4e75b24d9139f046a06a274
+
+COCOAPODS: 1.7.0.beta.1

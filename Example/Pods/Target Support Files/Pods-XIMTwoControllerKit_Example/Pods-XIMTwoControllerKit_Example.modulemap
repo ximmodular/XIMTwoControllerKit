@@ -1,0 +1,6 @@
+framework module Pods_XIMTwoControllerKit_Example {
+  umbrella header "Pods-XIMTwoControllerKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

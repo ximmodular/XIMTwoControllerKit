@@ -1,0 +1,27 @@
+{
+  "name": "XIMTwoControllerKit",
+  "version": "0.1.0",
+  "summary": "A short description of XIMTwoControllerKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ximmodular/XIMTwoControllerKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xim9160": "281016974@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ximmodular/XIMTwoControllerKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XIMTwoControllerKit/Classes/**/*",
+  "dependencies": {
+    "XIMTwoControllerCategoryKit": [
+
+    ]
+  }
+}
